@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+>
+    <title>About Me</title>
+    <style>
+  
+    body {
+      background-color: #f3f3f3;
+      color: #333;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #0055aa;
+    }
+
+    ul {
+      background-color: #e6f2ff;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #0055aa;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003f7f;
+    }
+    .skills-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skill-card {
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #4CAF50;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: #e8f0fe;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+div {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.profile-pic {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-menu {
+  margin-top: 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  color: black;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffcc;
+  transform: scale(1.1);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu a {
+    margin: 10px 0;
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+.contact {
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: darkslategray;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Change this to any color */
+  color: #333;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('6photo.jpg'); /* Replace with your image */
+  background-size: cover; /* Makes it cover the screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Avoid repetition */
+  color: #333;
+  padding: 20px;
+}
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* dark semi-transparent */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #00ffff; /* light blue links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+}
+  </style>
+</head>
+
+<body>
+ <nav>
+  <a href=""index.html"><i class="fas fa-home"></i> Home</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+
+
+</nav>
+<h2>My Skills</h2>
+
+<div class="grid-container">
+  <div class="header">
+  <h1>My Portfolio</h1>
+  <body>
+  <nav>
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="#"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+</body>
+</div>
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+ <div class="sidebar">
+  <img src="profile.jpg" alt="My Photo" class="profile-pic">
+  <h3>Pastor Felix Uwamusi</h3>
+  <p>Web Development Student & Future App Builder 🌍</p>
+</div>
+  <div class="main-content">Main Content</div>
+  <div class="footer">Footer</div>
+</div>
+<div class="skills-container">
+  <div class="skill-card">HTML</div>
+  <div class="skill-card">CSS</div>
+  <div class="skill-card">JavaScript</div>
+</div>
+
+<div class="gallery">
+  <img src="project3.jpg" alt="Image 1">
+  <img src="project2.jpg" alt="Image 2">
+  <img src="project1.jpg" alt="Image 3">
+  <img src="LOGOS.jpeg" alt="Image 4">
+</div>
+
+    <h1>Pastor Felix Itaman Uwamusi</h1>
+
+    <p>Hello! I am passionate about helping people, sharing God’s word, and learning new things like web development. I'm excited to build websites that inspire others.</p>
+
+    <h2>My Hobbies:</h2>
+    <ul>
+        <li>Storytelling</li>
+        <li>Teaching</li>
+        <li>Web learning</li>
+        <li>Farming ideas</li>
+        Things I Enjoy</h2>
+<ul>
+  <li>Reading the Bible</li>
+  <li>Teaching</li>
+  <li>Learning Web Development</li>
+</ul>
+<h2>My Goals for This Week</h2>
+<ol>
+  <li>Practice HTML daily</li>
+  <li>Learn basic CSS styling</li>
+  <li>Build a simple web page</li>
+</ol>
+<br>
+<h2>Here’s a Photo of Me</h2>
+<img src="myphoto.jpg" alt="My Photo" width="300">
+<a href="https://www.w3schools.com" target="_blank">
+  <img src="favicon.jpg" width="300" alt="W3Schools">
+</a>
+<img src="6photo.jpg" alt="Avatar" width="200">
+    </ul>
+<h2>Contact Me</h2>
+<form>
+  <label for="name">Full Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="email">Email Address:</label><br>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="message">Your Message:</label><br>
+  <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Send">
+</form>
+
+<h2>My Weekly Schedule</h2>
+<table border="1">
+  <tr>
+    <th>Day</th>
+    <th>Activity</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Practice HTML</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Study CSS</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>Watch a tutorial</td>
+  </tr>
+</table>
+    
+
+<div class="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+<footer>
+  <p>&copy; 2025 Pastor Felix. All rights reserved.</p>
+  <p>Follow me on 
+    <a href="https://facebook.com" target="_blank">Facebook</a> | 
+    <a href="https://twitter.com" target="_haiteen">Twitter</a>
+  </p>
+</footer>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<p>Visit my favorite website: 
+        <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    </p>
+</body>
+</html>
